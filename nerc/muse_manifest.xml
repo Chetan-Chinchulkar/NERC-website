@@ -1,0 +1,386 @@
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="iitg.ac.in" resolutions="1x" timestamp="1649654057333">
+  <folder name="css">
+    <file name="site_global.css" crc="3788836448"/>
+    <file name="master_a-master.css" crc="3913806393" ref="registration:contact:committee:index:programs:acommodation:institutions:venue:sponsors:research-areas"/>
+    <file name="registration.css" crc="4263641991" ref="registration"/>
+    <file name="iefonts_registration.css" crc="4023316393" ref="registration"/>
+    <file name="contact.css" crc="4119616853" ref="contact"/>
+    <file name="iefonts_contact.css" crc="4074718280" ref="contact"/>
+    <file name="committee.css" crc="495126367" ref="committee"/>
+    <file name="iefonts_committee.css" crc="23324245" ref="committee"/>
+    <file name="index.css" crc="4271980367" ref="index"/>
+    <file name="iefonts_index.css" crc="533227718" ref="index"/>
+    <file name="programs.css" crc="94976124" ref="programs"/>
+    <file name="iefonts_programs.css" crc="3947827781" ref="programs"/>
+    <file name="acommodation.css" crc="4140183518" ref="acommodation"/>
+    <file name="iefonts_acommodation.css" crc="4226840513" ref="acommodation"/>
+    <file name="institutions.css" crc="4235155083" ref="institutions"/>
+    <file name="iefonts_institutions.css" crc="528991879" ref="institutions"/>
+    <file name="venue.css" crc="119021016" ref="venue"/>
+    <file name="iefonts_venue.css" crc="453723889" ref="venue"/>
+    <file name="sponsors.css" crc="357693677" ref="sponsors"/>
+    <file name="iefonts_sponsors.css" crc="460843260" ref="sponsors"/>
+    <file name="research-areas.css" crc="4076893655" ref="research-areas"/>
+    <file name="iefonts_research-areas.css" crc="4038351294" ref="research-areas"/>
+  </folder>
+  <folder name="assets">
+    <file name="outside-accomodation.pdf" crc="4039457774" seo="true" mt="1648031392000"/>
+    <file name="postertemplate-(1).pptx" crc="274576623" seo="true" mt="1648642198000"/>
+    <file name="support.docx" crc="506624838" seo="true" mt="1649066622000"/>
+    <file name="ymc-details.pdf" crc="3905062108" seo="true" mt="1649071708000"/>
+    <file name="ipregulation.pdf" crc="402007556" seo="true" mt="1649071771000"/>
+    <file name="ipppt.pptx" crc="8017724" seo="true" mt="1649066662000"/>
+    <file name="yie-award-regulations.pdf" crc="3759882672" seo="true" mt="1649071876000"/>
+    <file name="annexure-i--yie-awards.pptx" crc="3912709402" seo="true" mt="1649068655000"/>
+    <file name="gbp-conclave.pdf" crc="4116972246" seo="true" mt="1649238472000"/>
+    <file name="tentativeprogram.pdf" crc="3886331627" seo="true" mt="1648710731000"/>
+    <file name="sampleabstractnerc2022.docx" crc="3918910737" seo="true" mt="1649397985000"/>
+    <file name="1500-nerc_poster15-03-2022_final.pdf" crc="4175730340" seo="true" mt="1647260234000"/>
+    <file name="nerc-poster.pdf" crc="3870137068" seo="true" mt="1649231289000"/>
+    <file name="detailed.pdf" crc="3859065321" seo="true" mt="1647260342000"/>
+    <file name="guidelinesfullpaper.pdf" crc="225752399" seo="true" mt="1649414995000"/>
+    <file name="ipannexure1.pptx" crc="8017724" seo="true" mt="1649415295000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:venue:registration:programs:sponsors:contact:acommodation:research-areas:committee:institutions"/>
+    <file name="museutils.js" crc="3939489907" ref="index:venue:registration:programs:sponsors:contact:acommodation:research-areas:committee:institutions"/>
+    <file name="whatinput.js" crc="86476730" ref="index:venue:registration:programs:sponsors:contact:acommodation:research-areas:committee:institutions"/>
+    <file name="museconfig.js" crc="128606099" ref="index:venue:registration:programs:sponsors:contact:acommodation:research-areas:committee:institutions"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="85124417" ref="index:programs:research-areas:committee"/>
+    <file name="jquery.watch.js" crc="522499760" ref="index:venue:registration:programs:sponsors:contact:acommodation:research-areas:committee:institutions"/>
+    <file name="jquery.musemenu.js" crc="4139692962" ref="index:venue:registration:programs:sponsors:contact:acommodation:research-areas:committee:institutions"/>
+    <file name="webpro.js" crc="3856315280" ref="index:registration:programs"/>
+    <file name="musewpslideshow.js" crc="244150766" ref="index:registration:programs"/>
+    <file name="jquery.museoverlay.js" crc="3877667098" ref="index:registration:programs"/>
+    <file name="touchswipe.js" crc="3888935200" ref="index:registration:programs"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:venue:registration:programs:sponsors:contact:acommodation:research-areas:committee:institutions"/>
+    <file name="require.js" crc="4177726516" ref="index:venue:registration:programs:sponsors:contact:acommodation:research-areas:committee:institutions"/>
+  </folder>
+  <folder name="images">
+    <file name="a-master-favicon.ico" crc="444003225" ref="index"/>
+    <file name="mountain.png" crc="3839813820" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="3150.png" crc="3869325358" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="azadi.png" crc="308561035" seo="true" ref="index:venue:registration:programs:sponsors:contact:acommodation:research-areas:committee:institutions">
+      <caption webpage="programs" alt=""/>
+      <caption webpage="acommodation" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="institutions" alt=""/>
+      <caption webpage="registration" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="research-areas" alt=""/>
+      <caption webpage="committee" alt=""/>
+      <caption webpage="venue" alt=""/>
+      <caption webpage="sponsors" alt=""/>
+    </file>
+    <file name="as23.jpg" crc="4243044531" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="ciet.jpg" crc="355659992" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="nit.jpg" crc="143325094" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="spn08938.jpg" crc="454702423" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1main-gate.jpg" crc="3837192886" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="56142462.jpg" crc="4171079758" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rsc2.jpg" crc="183278068" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rhino.jpg" crc="521805931" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="25 years.jpg" crc="4282469902" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="73-negroni_1.jpg" crc="37870046" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="moe.png" crc="165501887" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="bgg.jpg" crc="4092282826" ref="index:venue:registration:programs:sponsors:contact:acommodation:research-areas:committee">
+      <caption webpage="programs" alt=""/>
+      <caption webpage="acommodation" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="registration" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="research-areas" alt=""/>
+      <caption webpage="committee" alt=""/>
+      <caption webpage="venue" alt=""/>
+      <caption webpage="sponsors" alt=""/>
+    </file>
+    <file name="1-u20298-3-fr.png" crc="8612875" ref="index:venue:registration:programs:sponsors:contact:acommodation:research-areas:committee:institutions">
+      <caption webpage="programs" alt="Program"/>
+      <caption webpage="programs" alt="Program"/>
+      <caption webpage="acommodation" alt="Accommodation"/>
+      <caption webpage="contact" alt="Contact Us"/>
+      <caption webpage="institutions" alt="List of Participating Institutions"/>
+      <caption webpage="registration" alt="Registration"/>
+      <caption webpage="index" alt="Welcome to North-East Research Conclave"/>
+      <caption webpage="research-areas" alt="Research Areas"/>
+      <caption webpage="committee" alt="Committee - North-East Research Conclave"/>
+      <caption webpage="venue" alt="Welcome to IIT Guwahati"/>
+      <caption webpage="venue" alt="Guwahati Biotech Park"/>
+      <caption webpage="venue" alt="Tourist destinations in the North-East"/>
+      <caption webpage="sponsors" alt="Chief Organizer"/>
+      <caption webpage="sponsors" alt="Co-Organizers"/>
+      <caption webpage="sponsors" alt="Bank Details for NERC 2022 Sponsorship"/>
+      <caption webpage="sponsors" alt="Bank Details for ABC 2022 Sponsorship"/>
+      <caption webpage="sponsors" alt="Supported By"/>
+    </file>
+    <file name="gbp.jpg" crc="325087094" seo="true" ref="index:sponsors">
+      <caption webpage="index" alt=""/>
+      <caption webpage="sponsors" alt=""/>
+    </file>
+    <file name="output-onlinegiftools (2).gif" crc="58527766" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="sevensisters.png" crc="4014189574" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="1-u20298-3-fr-u44331-4-fr.png" crc="478329707" ref="index"/>
+    <file name="navigation-arrow.png" crc="4065062470" seo="true" ref="venue">
+      <caption webpage="venue" alt=""/>
+      <caption webpage="venue" alt=""/>
+    </file>
+    <file name="airplane-icon-png-2492.png" crc="3914665953" seo="true" ref="venue">
+      <caption webpage="venue" alt=""/>
+      <caption webpage="venue" alt=""/>
+    </file>
+    <file name="logistic-icon-png-12702.png" crc="3791091773" seo="true" ref="venue">
+      <caption webpage="venue" alt=""/>
+      <caption webpage="venue" alt=""/>
+    </file>
+    <file name="transportation-icon-png-24947.png" crc="194219743" seo="true" ref="venue">
+      <caption webpage="venue" alt=""/>
+    </file>
+    <file name="154.png" crc="454335691" seo="true" ref="venue">
+      <caption webpage="venue" alt=""/>
+    </file>
+    <file name="venue.jpg" crc="4240494811" seo="true" ref="venue">
+      <caption webpage="venue" alt=""/>
+    </file>
+    <file name="865.jpg" crc="4122655310" seo="true" ref="venue">
+      <caption webpage="venue" alt=""/>
+    </file>
+    <file name="164.jpg" crc="4170615392" seo="true" ref="venue">
+      <caption webpage="venue" alt=""/>
+    </file>
+    <file name="156.jpg" crc="4193661462" seo="true" ref="venue">
+      <caption webpage="venue" alt=""/>
+    </file>
+    <file name="864.jpg" crc="15687225" seo="true" ref="venue">
+      <caption webpage="venue" alt=""/>
+    </file>
+    <file name="layer496.jpg" crc="179967773" seo="true" ref="venue">
+      <caption webpage="venue" alt=""/>
+    </file>
+    <file name="text 2.png" crc="4261290373" ref="registration">
+      <caption webpage="registration" alt=""/>
+    </file>
+    <file name="sads.png" crc="4035673421" ref="registration">
+      <caption webpage="registration" alt=""/>
+    </file>
+    <file name="poster.png" crc="320376058" ref="registration">
+      <caption webpage="registration" alt=""/>
+    </file>
+    <file name="send.png" crc="193547967" ref="registration">
+      <caption webpage="registration" alt=""/>
+    </file>
+    <file name="1815.png" crc="160142792" seo="true" ref="programs:committee">
+      <caption webpage="programs" alt=""/>
+      <caption webpage="programs" alt=""/>
+      <caption webpage="committee" alt=""/>
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="sevensisters2.png" crc="3777305735" ref="programs">
+      <caption webpage="programs" alt=""/>
+    </file>
+    <file name="guwahati-biotech-park-removebg-preview.png" crc="4092619579" ref="programs">
+      <caption webpage="programs" alt=""/>
+    </file>
+    <file name="31502.png" crc="3927696573" seo="true" ref="sponsors">
+      <caption webpage="sponsors" alt=""/>
+    </file>
+    <file name="goa.png" crc="10178692" seo="true" ref="sponsors">
+      <caption webpage="sponsors" alt=""/>
+    </file>
+    <file name="moe-removebg-preview.png" crc="190774066" seo="true" ref="sponsors">
+      <caption webpage="sponsors" alt=""/>
+    </file>
+    <file name="north_east-removebg-preview.png" crc="3837393664" seo="true" ref="sponsors">
+      <caption webpage="sponsors" alt=""/>
+    </file>
+    <file name="north-eastern-council-shillong-removebg-preview.png" crc="292647556" seo="true" ref="sponsors">
+      <caption webpage="sponsors" alt=""/>
+    </file>
+    <file name="awesome_assam_logo.png" crc="3855039530" seo="true" ref="sponsors">
+      <caption webpage="sponsors" alt=""/>
+    </file>
+    <file name="8642.jpg" crc="15687225" seo="true" ref="acommodation">
+      <caption webpage="acommodation" alt=""/>
+    </file>
+    <file name="863.jpg" crc="3947835575" seo="true" ref="acommodation">
+      <caption webpage="acommodation" alt=""/>
+    </file>
+    <file name="8652.jpg" crc="3997615115" seo="true" ref="acommodation">
+      <caption webpage="acommodation" alt=""/>
+    </file>
+    <file name="research_data_image-u465968-fr.png" crc="3903552774" ref="research-areas"/>
+    <file name="research_data_image.jpg" crc="422286006" ref="research-areas">
+      <caption webpage="research-areas" alt=""/>
+    </file>
+    <file name="637745523811035964sustainablethinkingsquare-u468712-fr.png" crc="428229499" ref="research-areas"/>
+    <file name="637745523811035964sustainablethinkingsquare.jpg" crc="531449634" ref="research-areas">
+      <caption webpage="research-areas" alt=""/>
+    </file>
+    <file name="moe.jpg" crc="3973156887" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="hbs.jpg" crc="366292491" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="mose.jpg" crc="275404166" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="ss-u454479-fr.jpg" crc="4119826710" ref="committee"/>
+    <file name="ad-u454494-fr.jpg" crc="211728578" ref="committee"/>
+    <file name="gkr-u454524-fr.jpg" crc="124558372" ref="committee"/>
+    <file name="km-u454515-fr.jpg" crc="469537867" ref="committee"/>
+    <file name="rp.jpg" crc="445996326" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="tg.jpg" crc="294692229" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="lr-u454560-fr.jpg" crc="305257584" ref="committee"/>
+    <file name="kmc.jpg" crc="161530674" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="bkc.jpg" crc="188993331" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="nr-u454599-fr.jpg" crc="483677899" ref="committee"/>
+    <file name="el.jpg" crc="4216073804" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="am.jpg" crc="4090008666" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="hk.jpg" crc="4174046903" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="gp.jpg" crc="3762327877" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="bjp.jpg" crc="4091286162" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="gt-u454683-fr.jpg" crc="178380632" ref="committee"/>
+    <file name="vk2.jpg" crc="379266178" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="bag.jpg" crc="277797983" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="kkn.jpg" crc="3924052066" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="muthukumar.jpg" crc="3836310575" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="hemant-kaushik.jpg" crc="525314770" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="purkait.jpg" crc="414280349" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="achal.jpg" crc="299121841" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="dixit.jpg" crc="299426358" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="bharat_1.jpg" crc="84540113" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="sn_joshi_picoriginal.jpg" crc="4232698291" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="perumal.jpg" crc="4096141326" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="uppu.jpg" crc="45034776" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="bitha.jpg" crc="252540445" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="mahima.jpg" crc="3885450889" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="image-archana.jpg" crc="4023897437" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="john_2020.jpg" crc="425182938" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="akas.jpg" crc="514700355" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="prakash-u455380-fr.jpg" crc="4139427225" ref="committee"/>
+    <file name="mj.jpg" crc="289229549" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="bchoudhury.jpg" crc="4014231677" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="jsingh.jpg" crc="3937503978" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="mgogoi.jpg" crc="385274068" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="prajjalendra.jpg" crc="4043609483" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="rajiv_passport.jpg" crc="64691536" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="sdey.jpg" crc="88359839" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="vchoudhury.jpg" crc="4106235815" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="sbhardwaj.jpg" crc="79471332" ref="committee">
+      <caption webpage="committee" alt=""/>
+    </file>
+    <file name="bg.png" crc="451140128" ref="institutions">
+      <caption webpage="institutions" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="256431513" mt="1649651918257" redirect="true"/>
+  <file name="venue.html" crc="193966552" seo="true" mt="1649651918257" redirect="true"/>
+  <file name="registration.html" crc="464621093" seo="true" mt="1649651918257" redirect="true"/>
+  <file name="programs.html" crc="4228815675" seo="true" mt="1649651918257" redirect="true"/>
+  <file name="sponsors.html" crc="471451818" seo="true" mt="1649653631834" redirect="true"/>
+  <file name="contact.html" crc="405032144" seo="true" mt="1649651918257" redirect="true"/>
+  <file name="acommodation.html" crc="160007" seo="true" mt="1649651918257" redirect="true"/>
+  <file name="research-areas.html" crc="3986034693" seo="true" mt="1649651918257" redirect="true"/>
+  <file name="committee.html" crc="3872266431" seo="true" mt="1649651918257" redirect="true"/>
+  <file name="institutions.html" crc="4187247906" seo="true" mt="1649651918257" redirect="true"/>
+</manifest>

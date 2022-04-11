@@ -1,0 +1,34 @@
+
+
+
+
+-------------------------------------------------------------------------------
+NEW WIP
+-----------------------------
+
+
+
+CREATE TABLE accomodation_reg(
+id int auto_increment PRIMARY KEY,
+participationType varchar(50),
+email varchar(150),
+contactName varchar(250),
+contactPhone varchar(50),
+instituteName varchar(250),
+hotelAddress varchar(250),
+flightTrainNo varchar(150),
+arrivalDate varchar(50),
+pickupLocation varchar(50),
+departureDate varchar(50),
+dropLocation varchar(50),
+hotelToVenue varchar(50)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+
+
+
+
+
+

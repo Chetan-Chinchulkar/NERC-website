@@ -1,0 +1,35 @@
+
+
+
+
+-------------------------------------------------------------------------------
+NEW WIP
+-----------------------------
+
+
+
+CREATE TABLE visitor_reg(
+id int auto_increment PRIMARY KEY,
+dateTime varchar(25) NULL,
+regNum varchar(20),
+instituteName varchar(150),
+instituteType varchar(150),
+state varchar(150),
+city varchar(150),
+address varchar(255),
+contactName varchar(150),
+contactPhone varchar(20),
+contactDesig varchar(150),
+standard varchar(150),
+email varchar(150),
+atalTinkeringLab varchar(10)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+
+
+
+
+
+

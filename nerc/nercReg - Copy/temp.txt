@@ -1,0 +1,151 @@
+Registration Mode
+Email address*
+Title*
+First Name*
+Sur Name*
+Designation*
+Department/Center*
+Company/Affiliation/Institution*
+Sector
+Nationality*
+Mobile Number*
+Accommodation Required*
+Local-Transportation Required*
+Any Other Requirement*
+
+Mode of Participation
+Role
+sessionType
+techSessOrTheme
+lecture title
+lecture desc
+slotsReqd
+abstractFilePath
+---------------------------------------------------------------------------
+
+post_regMode
+post_email
+post_pwdInput
+post_title
+post_firstName
+post_surName
+post_desig
+post_dept
+post_affiliation
+post_sector
+post_nationality
+post_phone
+post_accomodationReqd
+post_transportationReqd
+post_otherRequirement
+post_modeOfParticipation
+post_participationRole
+post_sessionType
+post_techSessOrTheme
+post_lectureTitle
+post_lectureDescOrAbstract
+post_slotsReqd
+post_abstractFilePath
+
+
+------------------------------------------------------------------------------
+
+CREATE TABLE nerc_reg(
+id int auto_increment PRIMARY KEY,
+dateTime varchar(25) NULL,
+regNum varchar(20),
+regMode varchar(50),
+email varchar(50),
+password varchar(20),
+post_title varchar(10),
+firstName varchar(20),
+surName varchar(20),
+desig varchar(40),
+dept varchar(50),
+affiliation varchar(50),
+sector varchar(20),
+nationality varchar(20),
+phone varchar(15),
+accomodationReqd varchar(5),
+transportationReqd varchar(5),
+otherRequirement varchar(100),
+modeOfParticipation varchar(100),
+participationRole varchar(100),
+sessionType varchar(100),
+techSessOrTheme varchar(100),
+lectureTitle varchar(400),
+lectureDescOrAbstract varchar(3000),
+slotsReqd varchar(20),
+abstractFilePath varchar(100)	
+);
+
+
+
+
+-------------------------------------------------------------------------------
+NEW WIP
+-----------------------------
+
+CREATE TABLE abc_participants(
+id int auto_increment PRIMARY KEY,
+regNum varchar(20),
+role varchar(20),
+name varchar (100),
+desig varchar (100),
+email varchar (100),
+phone varchar (100),
+website varchar (100),
+exp varchar (100)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE nerc_reg(
+id int auto_increment PRIMARY KEY,
+dateTime varchar(25) NULL,
+regNum varchar(20),
+regMode varchar(50),
+email varchar(50),
+password varchar(20),
+post_title varchar(10),
+firstName varchar(20),
+surName varchar(20),
+desig varchar(40),
+dept varchar(50),
+affiliation varchar(50),
+sector varchar(20),
+nationality varchar(20),
+phone varchar(15),
+accomodationReqd varchar(5),
+transportationReqd varchar(5),
+otherRequirement varchar(100),
+modeOfParticipation varchar(100),
+participationRole varchar(100),
+sessionType varchar(100),
+techSessOrTheme varchar(100),
+lectureTitle varchar(400),
+lectureDescOrAbstract Text,
+slotsReqd varchar(20),
+abstractFilePath varchar(100),
+
+powerRqmt varchar(10),
+OtherRqmt varchar(255),
+schoolAddress varchar(255),
+letterFile varchar(100),
+productName varchar(255),
+grants varchar(255),	
+pptType varchar(100),
+incubator varchar(150),
+qualification varchar(150),
+expYears varchar(20),
+cvFile varchar(100),
+stmtPupose Text,
+dateOfVisit varchar(50)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+
+
+
+
+
+

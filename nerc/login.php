@@ -216,6 +216,9 @@
 		        cursor: pointer;
 		        text-decoration: none;
 		        width: 100%;
+				border: none;
+				border-radius: 50px;
+				background: rgba(255,255,255,.1);
 		      
 		      }
 
@@ -225,6 +228,7 @@
 		        text-decoration: none;
 		        border: 1px solid #fff;
 		        cursor: pointer;
+				background: rgba(0,255,255,.1);
 		      }
 
 		      .button{

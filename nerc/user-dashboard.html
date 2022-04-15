@@ -54,8 +54,85 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 					$(".ame-element-loader").delay(1000).fadeOut("slow");
 			 	});
    			</script>
-		
+    
  </head>
+ <style>
+     @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+        body {
+            padding: 24px;
+            font-family: 'Source Sans Pro', sans-serif;
+            margin: 0;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+        .container {
+            max-width: 100%;
+            /* margin-right: auto;
+            margin-left: auto; */
+            margin: 100px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* min-height: 100vh; */
+        }
+        .table {
+            width: 100%;
+            border: 1px solid #eee;
+        }
+        .table-header {
+            display: flex;
+            width: 100%;
+            background: #000;
+            padding: 18px 0;
+        }
+        .table-row {
+            display: flex;
+            width: 100%;
+            padding: 18px 0;
+        }
+        .table-row:nth-of-type(odd) {
+            background: #eee;
+        }
+        .table-data, .header__item {
+            flex: 1 1 20%;
+            text-align: center;
+        }
+        .header__item {
+            text-transform: uppercase;
+        }
+        .header__item a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .filter__link {
+            color: white;
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        .filter__link::after {
+            content: '';
+            position: absolute;
+            right: -18px;
+            color: white;
+            font-size: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .filter__link.desc::after {
+            content: '(desc)';
+        }
+        .filter__link.asc::after {
+            content: '(asc)';
+        }
+        
+ </style>
  <body>
 
   <!--HTML Widget code-->
@@ -307,79 +384,77 @@ to use and available for download at: http://adobemuseexpert.com/
       <a class="nonblock nontext rounded-corners clearfix grpelem" id="buttonu469266" href="assets/gbp-conclave.pdf" target="_blank"><!-- container box --><div class="clearfix grpelem" id="u469267-4"><!-- content --><p>ABC Brochure</p></div></a>
      </div>
     </div>
-    <div class="browser_width colelem" id="u469296-bw">
-     <div id="u469296"><!-- column -->
-      <div class="clearfix" id="u469296_align_to_page">
-       <div class="clearfix colelem" id="ppu20299-4"><!-- group -->
-        <div class="clearfix grpelem" id="pu20299-4"><!-- column -->
-         <div class="clearfix colelem" id="u20299-4"><!-- content -->
-          <p>Welcome to North-East Research Conclave</p>
-         </div>
-         <div class="clearfix colelem" id="u677"><!-- group -->
-          <div class="naren clearfix grpelem" id="u543-10"><!-- content -->
-           <p>Research and Development is one of the foundational pillars for holistic growth of the country specially for a fast-developing nation like India. The dynamicity of our nation is a collaborative effort of all the states. However, in recent years the North Eastern states are coming to the limelight for excellent laurels in innovation and collaborations in the field of science &amp; technology.</p>
-           <p>The North-Eastern Region (NER) comprising the Seven Sister States along with its only brother Sikkim, is one of the most decorated jewels in the crown of the Nation. Apart from being one of the most strategically important regions of the country, the region hosts the reservoir of extensive natural resources coupled with its exotic beauty. It presents itself as one of the uncharted horizons full of enchanting opportunities and sturdy potential, but simultaneously offers a plethora of unique challenges.</p>
-           <p>Overcoming the challenges is of utmost priority for exponential developmental growth of this region for which many educational and research organizations, has been engaged in cutting-edge research. Therefore, there urgent need to bring all the research, innovation ideas and most importantly, the human resource onto a common platform. Indian Institute of Technology Guwahati, since its inception, has steadily grown to be the ambassador of Research and Development in North-Eastern India. The institute is playing the key role in providing leadership in translational research and making the North East to achieve a prominent position in the global platform.</p>
-           <p>As India marks 75 years of independence and celebrates Azadi Ka Amrit Mahotsav, Indian Institute of Technology Guwahati proposes to organize “The North-Eastern Research Conclave”.</p>
-          </div>
-         </div>
-        </div>
-        <div class="clearfix grpelem" id="pu454431"><!-- column -->
-         <div class="clip_frame colelem" id="u454431"><!-- image -->
-          <img class="block" id="u454431_img" src="images/gbp.jpg?crc=325087094" alt="" width="271" height="98"/>
-         </div>
-         <div class="rounded-corners clearfix colelem" id="u454010"><!-- column -->
-          <div class="position_content" id="u454010_position_content">
-           <div class="clearfix colelem" id="u454016-4"><!-- content -->
-            <p>Important Dates</p>
-           </div>
-           <div class="clearfix colelem" id="pu454025-4"><!-- group -->
-            <div class="clearfix grpelem" id="u454025-4"><!-- content -->
-             <p>Submission Dates</p>
+    <div class="clearfix colelem" id="pu458844"><!-- group -->
+        <?php
+            <!-- How the events registered by the user -->
+            $sql = "SELECT * FROM events WHERE user_id = '$user_id'";
+            $result = mysqli_query($conn, $sql);
+
+            <!-- show the list of all events -->
+            while($row = mysqli_fetch_assoc($result)){
+                $event_id = $row['event_id'];
+                $event_name = $row['event_name'];
+                $event_date = $row['event_date'];
+                $event_time = $row['event_time'];
+                $event_venue = $row['event_venue'];
+                $event_description = $row['event_description'];
+                $event_image = $row['event_image'];
+                $event_category = $row['event_category'];
+                $event_status = $row['event_status'];
+            }
+        ?>
+
+        <div>
+
+            <div class="container">
+                
+                <div class="table">
+                    <div class="table-header">
+                        <div class="header__item"><a id="name" class="filter__link" href="#">Event Registered</a></div>
+                        <div class="header__item"><a id="wins" class="filter__link filter__link--number" href="#">Event Date</a></div>
+                        <div class="header__item"><a id="wins" class="filter__link filter__link--number" href="#">Event Time</a></div>
+                        <div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">Venue</a></div>
+                        
+                    </div>
+                    <div class="table-content">
+                        <?php foreach ($result as $person) : ?>
+                        <div class="table-row">
+                            <div class="table-data"><?php echo $person['event_name']; ?></div>
+                            <div class="table-data"><?php echo $person['event_date']; ?></div>
+                            <div class="table-data"><?php echo $person['event_time']; ?></div>
+                            <div class="table-data"><?php echo $person['event_venue']; ?></div>
+                            <!-- <div class="table-data"><?php echo $person['event_description']; ?></div>
+                            <div class="table-data"><?php echo $person['event_image']; ?></div>
+                            <div class="table-data"><?php echo $person['event_category']; ?></div>
+                            <div class="table-data"><?php echo $person['event_status']; ?></div> -->
+                        </div>
+                        <?php endforeach; ?>
+                        <!-- <div class="table-row">		
+                            <div class="table-data">Panel Discussion</div>
+                            <div class="table-data">2</div>
+                            <div class="table-data">0</div>
+                            <div class="table-data">0</div>
+                            
+                        </div>
+                        <div class="table-row">
+                            <div class="table-data">Parallel Technical Sessions</div>
+                            <div class="table-data">1</div>
+                            <div class="table-data">1</div>
+                            <div class="table-data">1</div>
+                            
+                        </div>
+                        <div class="table-row">
+                            <div class="table-data">Harry</div>
+                            <div class="table-data">0</div>
+                            <div class="table-data">2</div>
+                            <div class="table-data">2</div>
+                            
+                        </div> -->
+
+                    </div>	
+                </div>
             </div>
-            <div class="clearfix grpelem" id="u454019"><!-- column -->
-             <div class="naren clearfix colelem" id="u454020-10"><!-- content -->
-              <p id="u454020-2">Registration Opens</p>
-              <p id="u454020-4">March 4, 2022</p>
-              <p id="u454020-6">Registration Closes</p>
-              <p id="u454020-8">May 12, 2022</p>
-             </div>
-             <div class="naren clearfix colelem" id="u454028-17"><!-- content -->
-              <p id="u454028-2">Last Date for Abstract Submission</p>
-              <p id="u454028-4">(for Oral Presentation)</p>
-              <p id="u454028-6">April 20, 2022</p>
-              <p id="u454028-9"><span id="u454028-7">Acceptance of Abstract (Oral/Poster)</span><span id="u454028-8"></span></p>
-              <p id="u454028-11"><span id="u454028-10">April 25, 2022</span></p>
-              <p id="u454028-13">Manuscript Submission (Optional)</p>
-              <p id="u454028-15">May 15, 2022</p>
-             </div>
-             <div class="naren clearfix colelem" id="u454031-4"><!-- content -->
-              <p id="u454031-2">Based on presentations followed by screening, the manuscripts may be considered for a review process for possible publication in a Journal / Book</p>
-             </div>
-            </div>
-           </div>
-          </div>
-         </div>
         </div>
-       </div>
-       <div class="museBGSize clip_frame colelem" id="u453726"><!-- image -->
-        <img class="block" id="u453726_img" src="images/sevensisters.png?crc=4014189574" alt="" width="687" height="704"/>
-       </div>
-       <div class="clearfix colelem" id="u453868"><!-- group -->
-        <div class="clearfix grpelem" id="u453869-15"><!-- content -->
-         <p id="u453869-2">The Mission of the proposed Conclave is:</p>
-         <ul class="list0 nls-None" id="u453869-13">
-          <li id="u453869-4">To showcase the best R&amp;D activities from all the educational and research institutions across the states of North-East India.</li>
-          <li id="u453869-6">To create a common interface for interaction of academia and industry in North- East India.</li>
-          <li id="u453869-8">To create an environment, conducive to development of local indigenous technologies and innovations, creating the scope and laying the foundation for entrepreneurship.</li>
-          <li id="u453869-10">To agglomerate a vast talent pool, for promotion of Translational Research.</li>
-          <li id="u453869-12">To help the country achieve the deliverables of the Sustainable Development Goals.</li>
-         </ul>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
    </div>
    <div class="verticalspacer" data-offset-top="2637" data-content-above-spacer="2636" data-content-below-spacer="240"></div>
    <div class="clearfix grpelem" id="pu1966"><!-- group -->
@@ -490,5 +565,77 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
             console.log("Widgets: AdobeMuseExpert.com");
             </script>
 		
+
+        <script>
+            var properties = [
+                'event',
+                'date',
+                'time',
+                'venue',
+                
+            ];
+
+            $.each( properties, function( i, val ) {
+                
+                var orderClass = '';
+
+                $("#" + val).click(function(e){
+                    e.preventDefault();
+                    $('.filter__link.filter__link--active').not(this).removeClass('filter__link--active');
+                    $(this).toggleClass('filter__link--active');
+                    $('.filter__link').removeClass('asc desc');
+
+                    if(orderClass == 'desc' || orderClass == '') {
+                            $(this).addClass('asc');
+                            orderClass = 'asc';
+                    } else {
+                        $(this).addClass('desc');
+                        orderClass = 'desc';
+                    }
+
+                    var parent = $(this).closest('.header__item');
+                        var index = $(".header__item").index(parent);
+                    var $table = $('.table-content');
+                    var rows = $table.find('.table-row').get();
+                    var isSelected = $(this).hasClass('filter__link--active');
+                    var isNumber = $(this).hasClass('filter__link--number');
+                        
+                    rows.sort(function(a, b){
+
+                        var x = $(a).find('.table-data').eq(index).text();
+                            var y = $(b).find('.table-data').eq(index).text();
+                            
+                        if(isNumber == true) {
+                                    
+                            if(isSelected) {
+                                return x - y;
+                            } else {
+                                return y - x;
+                            }
+
+                        } else {
+                        
+                            if(isSelected) {		
+                                if(x < y) return -1;
+                                if(x > y) return 1;
+                                return 0;
+                            } else {
+                                if(x > y) return -1;
+                                if(x < y) return 1;
+                                return 0;
+                            }
+                        }
+                        });
+
+                    $.each(rows, function(index,row) {
+                        $table.append(row);
+                    });
+
+                    return false;
+                });
+
+            });
+        </script>
+
    </body>
 </html>
